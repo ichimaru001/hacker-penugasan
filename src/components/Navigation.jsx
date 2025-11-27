@@ -16,7 +16,7 @@ export const Navigation = () => {
         flexWrap: "wrap",
       }}
     >
-      <h1 style={{ color: "#252B42", marginLeft: "1vw" }}>Bookstar</h1>
+      <h1 style={{ color: "#252B42" }}>Bookstar</h1>
       <div
         style={{
           display: "flex",
@@ -34,12 +34,7 @@ export const Navigation = () => {
         <button className="navigation-button">Contact</button>
         <button className="navigation-button">Pages</button>
       </div>
-      <div
-        className="user-actions"
-        style={{
-          marginRight: "1vw",
-        }}
-      >
+      <div className="user-actions" style={{}}>
         <button className="login-register-button">Login / Register</button>
       </div>
     </nav>
