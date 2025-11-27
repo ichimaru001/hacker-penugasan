@@ -12,6 +12,7 @@ const BookCard = ({ title, genre, initialPrice, finalPrice, cover }) => {
         alignItems: "center",
         columnGap: "0rem",
         backgroundColor: "#FFFFFF",
+        marginBottom: "1.6rem",
       }}
     >
       <img

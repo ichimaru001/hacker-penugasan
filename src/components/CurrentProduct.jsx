@@ -1,27 +1,62 @@
 import React from "react";
 import carouselImage from "../assets/carousel-inner.png";
+
+import heartVector from "../assets/vectors/Vector-7.svg";
+import cartVector from "../assets/vectors/Vector-8.svg";
+import watchVector from "../assets/vectors/Vector.png";
+import leftVector from "../assets/vectors/Vector-10.svg";
+import rightVector from "../assets/vectors/Vector-11.svg";
+
 export const CurrentProduct = () => {
   return (
     <section
       style={{
         minHeight: "598px",
+        width: "100vw",
         display: "flex",
         justifyContent: "center",
+        // flexWrap: "wrap",
+        marginBottom: "3rem",
       }}
     >
       <div
+        className="current-product-div"
         style={{
+          // maxWidth: "1050px",
           minWidth: "506px",
           minHeight: "475px",
           display: "flex",
-          flexDirection: "row",
+          // flexDirection: "row",
           justifyContent: "center",
           alignItems: "center",
           columnGap: "1rem",
+          // flexWrap: "wrap",
         }}
       >
-        <figure>
-          <img src={carouselImage} alt="" />
+        <figure style={{ position: "relative" }}>
+          <img src={carouselImage} alt=""></img>
+          <div
+            style={{
+              position: "absolute",
+              height: "100%",
+              width: "100%",
+              top: "0",
+              bottom: "0",
+              left: "0",
+              right: "0",
+            }}
+          >
+            <img
+              src={leftVector}
+              alt=""
+              style={{ position: "absolute", left: "2rem", top: "14rem" }}
+            />
+            <img
+              src={rightVector}
+              alt=""
+              style={{ position: "absolute", right: "2rem", top: "13.7rem" }}
+            />
+          </div>
         </figure>
         <article
           style={{
@@ -58,7 +93,15 @@ export const CurrentProduct = () => {
               $1,139.33
             </h3>
             <p>
-              <b>Availability :</b> In Stock
+              <b>Availability :</b>{" "}
+              <span
+                style={{
+                  color: "#23A6F0",
+                  fontWeight: "500",
+                }}
+              >
+                In Stock
+              </span>
             </p>
             <p
               style={{
@@ -130,9 +173,12 @@ export const CurrentProduct = () => {
                   backgroundColor: "#DBECFF",
                   borderRadius: "100%",
                   border: "none",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
                 }}
               >
-                H
+                <img src={heartVector} alt="" />
               </button>
               <button
                 style={{
@@ -141,9 +187,12 @@ export const CurrentProduct = () => {
                   backgroundColor: "#DBECFF",
                   borderRadius: "100%",
                   border: "none",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
                 }}
               >
-                C
+                <img src={cartVector} alt="" />
               </button>
               <button
                 style={{
@@ -152,9 +201,12 @@ export const CurrentProduct = () => {
                   backgroundColor: "#DBECFF",
                   borderRadius: "100%",
                   border: "none",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
                 }}
               >
-                W
+                <img src={watchVector} alt="" />
               </button>
             </div>
           </div>

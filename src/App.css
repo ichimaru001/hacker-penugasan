@@ -1,6 +1,8 @@
 body {
   background-color: #fafafa;
   color: #858585;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /* Navigation */
@@ -26,6 +28,21 @@ body {
 }
 
 /* Current Product */
+@media only screen and (min-width: 1500px) {
+  .current-product-div {
+    /* width: 100px; */
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .current-product-div {
+    /* width: 100px; */
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+  }
+}
+
 .CurrentProduct-book-tag-div {
   width: 506px;
   display: flex;

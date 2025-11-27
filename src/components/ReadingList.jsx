@@ -13,7 +13,7 @@ export const ReadingList = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        marginBottom: "3rem",
+        marginBottom: "2rem",
       }}
     >
       <div
@@ -30,6 +30,7 @@ export const ReadingList = () => {
             color: "#252B42",
             fontSize: "2rem",
             fontWeight: "600",
+            marginTop: "0",
             marginBottom: "0.6rem",
           }}
         >
@@ -55,7 +56,6 @@ export const ReadingList = () => {
           alignItems: "center",
           columnGap: "2rem",
           marginTop: "20px",
-          flexWrap: "wrap",
         }}
       >
         <BookCard

@@ -18,7 +18,7 @@ export const SmallNavigation = () => {
           flexDirection: "row",
           alignItems: "center",
           columnGap: "1rem",
-          fontSize: "1.3rem",
+          fontSize: "1.2rem",
         }}
       >
         <span
