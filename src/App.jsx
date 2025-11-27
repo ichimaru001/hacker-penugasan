@@ -9,17 +9,82 @@ function App() {
   return (
     <>
       <main>
-          <header>
-
+          <header> // displays phone number, email, social media links
           </header>
-          <body>
-            <section>
+          <nav> // stores navigation buttons, login/register, cart, favorites
 
-            </section>
-            <section>
-              
-            </section>
-          </body>
+          </nav>
+          <section> // breadcrumb navigation 
+
+          </section>
+          <section> // showing current product
+            <figure> // main product image
+
+            </figure>
+            <article> // main product description/buttons
+              <span> // book tags
+
+              </span>
+              <div> // main product descriptions
+
+              </div>
+              <div> // user buttons, buy now, favorite, add to cart
+
+              </div>
+            </article>
+          </section>
+          <section> // reading list
+            <h2> // "Your Reading List" header
+
+            </h2>
+            <article> // small  4 total
+              <figure> // small product image
+
+              </figure>
+              <div>
+                <h3> // book title
+
+                </h3>
+                <p> // book genre
+
+                </p>
+                <div>
+                  <span> // initial price
+
+                  </span>
+                  <p> // final price
+
+                  </p>
+                </div>
+              </div>
+            </article>
+          </section>
+          <section> // books for you - two rows
+            <h2> // "Books For You" header
+
+            </h2>
+            <article> // small  4 total
+              <figure> // small product image
+
+              </figure>
+              <div>
+                <h3> // book title
+
+                </h3>
+                <p> // book genre
+
+                </p>
+                <div>
+                  <span> // initial price
+
+                  </span>
+                  <p> // final price
+
+                  </p>
+                </div>
+              </div>
+            </article>
+          </section>
       </main>
     </>
   )
