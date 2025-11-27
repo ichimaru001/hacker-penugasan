@@ -17,7 +17,7 @@ export const CurrentProduct = () => {
           flexDirection: "row",
           justifyContent: "center",
           alignItems: "center",
-          // columnGap: "1rem",
+          columnGap: "1rem",
           // flexWrap: "wrap",
         }}
       >

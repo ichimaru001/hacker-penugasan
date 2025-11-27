@@ -14,6 +14,8 @@ export const Header = () => {
         columnGap: "6rem",
         rowGap: "1rem",
         flexWrap: "wrap",
+        color: "#FFFFFF",
+        fontSize: "1rem",
       }}
     >
       <div
