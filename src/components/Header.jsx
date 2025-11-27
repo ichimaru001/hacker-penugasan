@@ -2,17 +2,47 @@ import React from "react";
 
 export const Header = () => {
   return (
-    <header>
-      // displays phone number, email, social media links
-      <div>
-        // phone number, email
-        <div></div> // phone number
-        <div></div> // email
+    <header
+      style={{
+        backgroundColor: "#23856D",
+        width: "100vw",
+        minHeight: "58px",
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+        columnGap: "6rem",
+        rowGap: "1rem",
+        flexWrap: "wrap",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          columnGap: "2rem",
+        }}
+      >
+        <div>(225) 555-0118</div>
+        <div>michelle.rivera@example.com</div>
       </div>
-      <div>
-        // offer, social media links
-        <div></div> // offer
-        <div></div> // social media links
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          columnGap: "3rem",
+        }}
+      >
+        <div
+          style={{
+            fontWeight: "bold",
+          }}
+        >
+          Follow Us and get a chance to win 80% off
+        </div>
+        <div>Follow Us : </div>
       </div>
     </header>
   );
