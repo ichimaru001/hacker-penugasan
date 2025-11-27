@@ -4,20 +4,41 @@ import BookCard from "./BookCard";
 
 export const ReadingList = () => {
   return (
-    <section>
-      <h2
+    <section
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        marginBottom: "3rem",
+      }}
+    >
+      <div
         style={{
-          position: "relative",
-          left: "23vw",
-          margin: "0 0 18px 25vw",
-          // marginLeft: "25vw",
-          color: "#252B42",
-          fontSize: "2rem",
-          fontWeight: "600",
+          width: "1050px",
+          // height
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "flex-start",
+          alignItems: "flex-start",
         }}
       >
-        Your Reading List
-      </h2>
+        <h2
+          style={{
+            // position: "relative",
+            // left: "2rem",
+            // JustifyContent: "flex-start",
+            // margin: "0 vw 0 0",
+            // marginLeft: "25vw",
+            color: "#252B42",
+            fontSize: "2rem",
+            fontWeight: "600",
+            marginBottom: "0.6rem",
+          }}
+        >
+          Your Reading List
+        </h2>
+      </div>
       <hr
         style={{
           display: "absolute",
@@ -31,11 +52,14 @@ export const ReadingList = () => {
       <div
         style={{
           display: "flex",
+          maxWidth: "1200px",
+          gridTemplateColumns: "1fr 1fr 1fr 1fr",
           flexDirection: "row",
           justifyContent: "center",
           alignItems: "center",
           columnGap: "2rem",
           marginTop: "20px",
+          flexWrap: "wrap",
         }}
       >
         <BookCard></BookCard>
