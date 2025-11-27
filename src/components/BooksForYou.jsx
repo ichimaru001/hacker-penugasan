@@ -1,4 +1,10 @@
 import React from "react";
+
+import productCover5 from "../assets/product-cover-5.png";
+import productCover4 from "../assets/product-cover-5(1).png";
+import productCover3 from "../assets/product-cover-5(2).png";
+import productCover2 from "../assets/product-cover-5(3).png";
+
 import BookCard from "./BookCard";
 
 export const BooksForYou = () => {
@@ -15,7 +21,6 @@ export const BooksForYou = () => {
       <div
         style={{
           width: "1050px",
-          // height
           display: "flex",
           flexDirection: "column",
           justifyContent: "flex-start",
@@ -24,11 +29,6 @@ export const BooksForYou = () => {
       >
         <h2
           style={{
-            // position: "relative",
-            // left: "2rem",
-            // JustifyContent: "flex-start",
-            // margin: "0 vw 0 0",
-            // marginLeft: "25vw",
             color: "#252B42",
             fontSize: "2rem",
             fontWeight: "600",
@@ -45,7 +45,6 @@ export const BooksForYou = () => {
           height: "2px",
           width: "1050px",
           border: "none",
-          // margin: "20px 0 26px 0",
         }}
       ></hr>
       <div
@@ -61,14 +60,62 @@ export const BooksForYou = () => {
           flexWrap: "wrap",
         }}
       >
-        <BookCard></BookCard>
-        <BookCard></BookCard>
-        <BookCard></BookCard>
-        <BookCard></BookCard>
-        <BookCard></BookCard>
-        <BookCard></BookCard>
-        <BookCard></BookCard>
-        <BookCard></BookCard>
+        <BookCard
+          title={"Graphic Design"}
+          genre={"Business"}
+          initialPrice={"16.4"}
+          finalPrice={"6.4"}
+          cover={productCover5}
+        ></BookCard>
+        <BookCard
+          title={"User Experience"}
+          genre={"Engineering"}
+          initialPrice={"16.4"}
+          finalPrice={"6.4"}
+          cover={productCover4}
+        ></BookCard>
+        <BookCard
+          title={"My Little Star"}
+          genre={"Fantasy"}
+          initialPrice={"16.4"}
+          finalPrice={"6.4"}
+          cover={productCover3}
+        ></BookCard>
+        <BookCard
+          title={"Think Different"}
+          genre={"Self Improvement"}
+          initialPrice={"16.4"}
+          finalPrice={"6.8"}
+          cover={productCover2}
+        ></BookCard>
+        <BookCard
+          title={"Graphic Design"}
+          genre={"Business"}
+          initialPrice={"16.4"}
+          finalPrice={"6.4"}
+          cover={productCover5}
+        ></BookCard>
+        <BookCard
+          title={"User Experience"}
+          genre={"Engineering"}
+          initialPrice={"16.4"}
+          finalPrice={"6.4"}
+          cover={productCover4}
+        ></BookCard>
+        <BookCard
+          title={"My Little Star"}
+          genre={"Fantasy"}
+          initialPrice={"16.4"}
+          finalPrice={"6.4"}
+          cover={productCover3}
+        ></BookCard>
+        <BookCard
+          title={"Think Different"}
+          genre={"Self Improvement"}
+          initialPrice={"16.4"}
+          finalPrice={"6.8"}
+          cover={productCover2}
+        ></BookCard>
       </div>
     </section>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import productCover5 from "../assets/product-cover-5.png";
 
-const BookCard = () => {
+const BookCard = ({ title, genre, initialPrice, finalPrice, cover }) => {
   return (
     <article
       style={{
@@ -9,15 +9,13 @@ const BookCard = () => {
         height: "438px",
         display: "flex",
         flexDirection: "column",
-        // justifyContent: "flex-start",
         alignItems: "center",
         columnGap: "0rem",
-        // flexWrap: "wrap",
         backgroundColor: "#FFFFFF",
       }}
     >
       <img
-        src={productCover5}
+        src={cover}
         alt=""
         style={{
           width: "239px",
@@ -38,7 +36,7 @@ const BookCard = () => {
             color: "#252B42",
           }}
         >
-          Graphic Design
+          {title}
         </h3>
         <p
           style={{
@@ -48,7 +46,7 @@ const BookCard = () => {
             marginLeft: "1rem",
           }}
         >
-          Business
+          {genre}
         </p>
         <div
           style={{
@@ -64,13 +62,13 @@ const BookCard = () => {
             marginLeft: "1rem",
           }}
         >
-          <span>$16.4</span>
+          <span>${initialPrice}</span>
           <p
             style={{
               color: "#23856D",
             }}
           >
-            $6.4
+            ${finalPrice}
           </p>
         </div>
       </div>

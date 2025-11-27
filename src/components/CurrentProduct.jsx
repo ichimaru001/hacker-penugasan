@@ -18,12 +18,10 @@ export const CurrentProduct = () => {
           justifyContent: "center",
           alignItems: "center",
           columnGap: "1rem",
-          // flexWrap: "wrap",
         }}
       >
         <figure>
           <img src={carouselImage} alt="" />
-          {/* <span></span> */}
         </figure>
         <article
           style={{
@@ -31,9 +29,7 @@ export const CurrentProduct = () => {
             height: "475px",
             display: "flex",
             flexDirection: "column",
-            // justifyContent: "center",
             alignItems: "center",
-            // rowGap: "1rem",
             flexWrap: "wrap",
           }}
         >
@@ -99,13 +95,11 @@ export const CurrentProduct = () => {
               display: "flex",
               flexDirection: "row",
               justifyContent: "flex-start",
-              // alignItems: "center",
               columnGap: "1rem",
               flexWrap: "wrap",
               marginTop: "2rem",
             }}
           >
-            {/* // user buttons, buy now, favorite, add to cart */}
             <div>
               <button
                 style={{
@@ -120,17 +114,13 @@ export const CurrentProduct = () => {
               >
                 Buy Now
               </button>
-              {/* // buy now */}
             </div>
             <div
               style={{
                 display: "flex",
                 flexDirection: "row",
                 justifyContent: "flex-start",
-                // alignItems: "center",
                 columnGap: "1rem",
-                // flexWrap: "wrap",
-                // marginTop: "2rem",
               }}
             >
               <button
@@ -144,7 +134,6 @@ export const CurrentProduct = () => {
               >
                 H
               </button>
-              {/* // like */}
               <button
                 style={{
                   width: "40px",
@@ -156,7 +145,6 @@ export const CurrentProduct = () => {
               >
                 C
               </button>
-              {/* // cart */}
               <button
                 style={{
                   width: "40px",
@@ -168,7 +156,6 @@ export const CurrentProduct = () => {
               >
                 W
               </button>
-              {/* // watch list */}
             </div>
           </div>
         </article>

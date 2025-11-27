@@ -2,21 +2,23 @@ import React from "react";
 
 export const SmallNavigation = () => {
   return (
-    <section>
+    <section
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <div
         style={{
-          position: "relative",
-          left: "26vw",
-          width: "100vw",
+          width: "940px",
           height: "92px",
           display: "flex",
           flexDirection: "row",
-          // justifyContent: "center",
-          // margin: "0rem 9rem",
           alignItems: "center",
           columnGap: "1rem",
-          flexWrap: "wrap",
-          fontSize: "1.2rem",
+          fontSize: "1.3rem",
         }}
       >
         <span
@@ -30,6 +32,6 @@ export const SmallNavigation = () => {
         <span className="hierarchy-small-nav">&gt;</span>
         <span className="hierarchy-small-nav">Shop</span>
       </div>
-    </section> // breadcrumb navigation
+    </section>
   );
 };

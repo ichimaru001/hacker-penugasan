@@ -10,7 +10,6 @@ export const Navigation = () => {
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-around",
-        // padding: "0rem 5vw",
         alignItems: "center",
         columnGap: "2rem",
         flexWrap: "wrap",
