@@ -1,5 +1,6 @@
 body {
   background-color: #fafafa;
+  color: #858585;
 }
 
 /* Navigation */
@@ -22,4 +23,28 @@ body {
 /* Breadcumb Navigation */
 .hierarchy-small-nav {
   color: #bdbdbd;
+}
+
+/* Current Product */
+.CurrentProduct-book-tag-div {
+  width: 506px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.CurrentProduct-book-tag {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #e0e0e0;
+  padding: 0.4rem 1.6rem;
+  border-radius: 2rem;
+}
+
+.CurrentProduct-book-details {
+  margin: 0;
 }
