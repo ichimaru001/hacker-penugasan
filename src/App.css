@@ -1,0 +1,15 @@
+.navigation-button {
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  color: #737373;
+}
+
+.login-register-button {
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  color: #007aff;
+}
